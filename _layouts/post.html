@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  {% include head.html %}
+</head>
+<body>
+  <header>
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">三驾马车 | 楚天阔</a>
+        <a class="navbar-brand" href="#"></a>
+      </div>
+      <div class="navbar-header col-md-6 col-md-offset-3">
+        <a class="navbar-brand" href="#">{% if page.title %}{{ page.title }}{% endif %}</a>
+      </div>
+    </div><!-- /.container-fluid -->
+  </nav>
+
+  </header>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-2">
+
+      </div>
+      <div class="col-md-8">
+        {{content}}
+      </div>
+      <div class="col-md-2">
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
