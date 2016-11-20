@@ -17,24 +17,27 @@ category: program
 7. 重构:100:
 
 程序类型：
-  1. 交互：继承MonoBehavior；命名为`*Mono.cs`
-    - 在这里的所有引用都是Transform
-    - 先获取子对象，再是外部对象
-  2. UI: 命名为`*UI.cs`
-    - 对Transform进行变换
-  3. 内部逻辑：继承Object；命名为`*.cs`
-    - 这里所有的引用是Component
-  4. 持久化：继承IO；命名为`*IO.cs`
-    - 负责存储数据
-  5. 本地化：使用`TextLocal`&&`UITextLocal`&&`ImageLocal`
+
+1. 交互：继承MonoBehavior；命名为`*Mono.cs`
+  - 在这里的所有引用都是Transform
+  - 先获取子对象，再是外部对象
+2. UI: 命名为`*UI.cs`
+  - 对Transform进行变换
+3. 内部逻辑：继承Object；命名为`*.cs`
+  - 这里所有的引用是Component
+4. 持久化：继承IO；命名为`*IO.cs`
+  - 负责存储数据
+5. 本地化：使用`TextLocal`&&`UITextLocal`&&`ImageLocal`
 
 变量顺序：
+
 1. 外部组件`Transform`，`Component`等等
 2. 内部部组件`Transform`，`Component`等等
 3. 公开可供修改参数
 4. 内部参数
 
 函数顺序：
+
 1. 内部继承函数`Awake`，`Start`，`Update`，`OnEnable`，`OnDisable`
 2. 外部调用函数 `public`
 3. 内部辅助函数 `private`
