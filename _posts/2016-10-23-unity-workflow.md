@@ -9,14 +9,15 @@ category: program
 整个流程如下，表情用于记录commit时加的标签
 
 1. 使用语音记录的方式记录自己设计的机制
-2. 使用AI进行切图并设计界面 :collision:
-3. 根据界面文件将Sprite导入 :heart:
-4. 编写交互逻辑Mono文件 :+1:
-5. 编写内部逻辑 :smile:
-6. 视情况决定是否编写持久化:tv:和本地化文件 :cn:
-7. 重构:100:
+2. 使用AI进行切图并设计界面
+3. 根据界面文件将Sprite导入
+4. 编写交互逻辑Mono文件
+5. 编写内部逻辑
+6. 视情况决定是否编写持久化和本地化文件
+7. 重构
 
 程序类型：
+<span name="cross_fire"></span>
 
 1. 交互：继承MonoBehavior；命名为`*Mono.cs`
   - 在这里的所有引用都是Transform
@@ -28,6 +29,12 @@ category: program
 4. 持久化：继承IO；命名为`*IO.cs`
   - 负责存储数据
 5. 本地化：使用`TextLocal`&&`UITextLocal`&&`ImageLocal`
+
+<aside name="cross_fire">
+
+这种划分有个问题:脚本间无法顺畅通信。这点尚未找到一个优雅的解决方案。
+
+</aside>
 
 变量顺序：
 
