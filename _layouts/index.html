@@ -13,21 +13,24 @@
       <div class="col-md-6">
         {{ content }}
       </div>
-      <div class="col-md-3 hidden-sm hidden-xs">
+      <div class="col-md-3 hidden-xs hidden-sm">
         <h3>About Me</h3>
-        <img class="img-rounded " src="/assets/photo.jpg">
+        <img class="img-rounded img-responsive" src="/assets/photo.jpg">
         <p></p>
         <p>楚天阔</p>
         <p>想要做一名生产者。</p>
+        <p>对游戏架构感兴趣？来读读我翻译的<a href="http://gpp.tkchu.me">《游戏编程模式》</a></p>
         <hr>
-        {% include links.html %}
+        <ul class="list-inline">
+          {% include links.html %}
+        </ul>
       </div>
     </div>
   </div>
   <hr>
-  <div class="hidden-lg hidden-md">
-    <ul class="list-inline">
-      {% include link.html %}
+  <div class="hidden-md hidden-lg">
+    <ul class="list-inline text-center">
+      {% include links.html %}
     </ul>
   </div>
   {% include footer.html %}
