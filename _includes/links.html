@@ -1,42 +1,40 @@
-<ul class="list-inline text-center">
-  {% if site.use_rss %}
-  <li>
-    <a target="_blank" href="{{ site.url }}{{ site.baseurl }}feed.xml">
-      <span class="fa-stack fa-lg">
-          <i class="fa fa-circle fa-stack-2x"></i>
-          <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
-      </span>
+{% if site.use_rss %}
+<li>
+  <a target="_blank" href="{{ site.url }}{{ site.baseurl }}feed.xml">
+    <span class="fa-stack fa-lg">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+    </span>
+  </a>
+</li>
+{% endif %}
+{% if site.twitter_username %}
+<li>
+    <a target="_blank" href="https://twitter.com/{{ site.twitter_username }}">
+        <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+        </span>
     </a>
-  </li>
-  {% endif %}
-  {% if site.twitter_username %}
-  <li>
-      <a target="_blank" href="https://twitter.com/{{ site.twitter_username }}">
-          <span class="fa-stack fa-lg">
-              <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-          </span>
-      </a>
-  </li>
-  {% endif %}
-  {% if site.github_username %}
-  <li>
-      <a target="_blank" href="https://github.com/{{ site.github_username }}">
-          <span class="fa-stack fa-lg">
-              <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-          </span>
-      </a>
-  </li>
-  {% endif %}
-  {% if site.zhihu_username %}
-  <li>
-    <a target="_blank" href="https://www.zhihu.com/people/{{ site.zhihu_username }}">
-      <span class="fa-stack fa-lg">
-          <i class="fa fa-circle fa-stack-2x"></i>
-          <i class="fa fa-stack-1x fa-inverse">知</i>
-      </span>
+</li>
+{% endif %}
+{% if site.github_username %}
+<li>
+    <a target="_blank" href="https://github.com/{{ site.github_username }}">
+        <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+        </span>
     </a>
-  </li>
-  {% endif %}
-</ul>
+</li>
+{% endif %}
+{% if site.zhihu_username %}
+<li>
+  <a target="_blank" href="https://www.zhihu.com/people/{{ site.zhihu_username }}">
+    <span class="fa-stack fa-lg">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa fa-stack-1x fa-inverse">知</i>
+    </span>
+  </a>
+</li>
+{% endif %}
