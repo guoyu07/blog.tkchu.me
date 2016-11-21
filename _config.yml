@@ -11,3 +11,5 @@ zhihu_username: tkchu # zhihu
 steam_username: tkchu # steam 该项需要在steam上编辑个人资料，指定自定义URL
 
 duoshuo_username: tkchushbm # 多说
+
+baseurl: /

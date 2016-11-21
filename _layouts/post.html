@@ -2,6 +2,7 @@
 <html lang="zh-CN">
 <head>
   {% include head.html %}
+  <title>{% if page.title %}{{ page.title }} | {% endif%}{{ site.title | escape }}</title>
 </head>
 <body>
   <header>
@@ -12,7 +13,7 @@
         <a class="navbar-brand" href="#"></a>
       </div>
       <div class="navbar-header col-md-6 col-md-offset-3">
-        <a class="navbar-brand" href="#">{% if page.title %}{{ page.title }}{% endif %}</a>
+        <a class="navbar-brand hidden-xs hidden-sm" href="#">{% if page.title %}{{ page.title }}{% endif %}</a>
       </div>
     </div><!-- /.container-fluid -->
   </nav>
@@ -21,18 +22,15 @@
 
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-2">
-
-      </div>
-      <div class="col-md-8">
+      <div class="col-md-8 col-md-offset-2">
         {{content}}
-      </div>
-      <div class="col-md-2">
-
+        <p>(完)</p>
       </div>
     </div>
   </div>
-
+  <hr>
+  {% include links.html %}
+  {% include footer.html %}
 </body>
 
 </html>
