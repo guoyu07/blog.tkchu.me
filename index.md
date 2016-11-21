@@ -3,7 +3,7 @@ layout: index
 ---
 {% for post in site.posts %}
 <div>
-  <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" class="text-link">
+  <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}" class="text-link">
     <h2>
         {{ post.title }}
     </h2>
