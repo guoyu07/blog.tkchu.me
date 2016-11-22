@@ -3,8 +3,8 @@
 <head>
   {% include head.html %}
   <title>{% if page.title %}{{ page.title }} | {% endif%}{{ site.title | escape }}</title>
-  <script type="text/javascript" src="/assets/script.js"></script>
-  <link rel="stylesheet" href="/assets/post.css">
+  <script type="text/javascript" src={{ "/assets/script.js" | pretend site.baseurl }}></script>
+  <link rel="stylesheet" href={{ "/assets/post.css" | pretend site.baseurl}} >
 
 </head>
 <body>
