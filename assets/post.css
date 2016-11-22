@@ -47,3 +47,6 @@ aside + aside {
     aside p, aside li {
       font: 14px/20px "Source Sans Pro", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif; }
     }
+    aside.col-md-5{
+      position: absolute;
+    }

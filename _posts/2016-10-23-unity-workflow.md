@@ -16,8 +16,7 @@ category: program
 6. 视情况决定是否编写持久化和本地化文件
 7. 重构
 
-程序类型：
-<span name="cross_fire"></span>
+<span name="cross_fire">程序类型：</span>
 
 1. 交互：继承MonoBehavior；命名为`*Mono.cs`
   - 在这里的所有引用都是Transform
