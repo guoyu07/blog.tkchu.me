@@ -15,7 +15,7 @@
       </div>
       <div class="col-md-3 hidden-xs hidden-sm">
         <h3>About Me</h3>
-        <img class="img-rounded img-responsive" src="{{ site.baseurl }}assets/photo.png">
+        <img class="img-rounded img-responsive" src="{% if site.cdnurl %}{{ site.cdnurl }}{% else %}{{ site.baseurl }}assets{% endif %}/photo.png">
         <p></p>
         <p>楚天阔</p>
         <p>想要做一名生产者。</p>

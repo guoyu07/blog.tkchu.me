@@ -6,12 +6,14 @@ description: >
   理解-分解-再构成。记录对游戏的分析，希望能对游戏设计有更深入的理解。
 author: 楚天阔
 
-twitter_username: tkchushbm # twitter
+#twitter_username: tkchushbm # twitter
 zhihu_username: tkchu # zhihu
 steam_username: tkchu # steam 该项需要在steam上编辑个人资料，指定自定义URL
-
+bilibili_id: 2395115
 duoshuo_username: tkchushbm # 多说
 
 use_rss: yes
 baseurl: /
 url: http://blog.tkchu.me
+
+cdnurl: http://ohe7bqlax.bkt.clouddn.com
