@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Unity 使用作业流程规范
-category: program
 ---
 
 使用Unity有一段时间了，需要总结一下工作流程，这样可以按部就班的完成作业，避免之后不知道自己该做些什么的窘境。

@@ -48,27 +48,26 @@ $(document).ready(function() {
 function refreshAsides() {
   // Don't position them if they're inline.
   if ($(document).width() < 992){
-    $("aside").each(function() {
-      var aside = $(this);
-      aside.removeClass("col-md-5");
-    });
+    $("aside").removeAttr("style")
     return;
   }
   // Vertically position the asides next to the span they annotate.
   $("aside").each(function() {
     var aside = $(this);
 
-    aside.addClass("col-md-5");
     // Find the span the aside should be anchored next to.
     var name = aside.attr("name");
     var span = $("span[name='" + name + "']");
     if (span == null) {
       window.console.log("Could not find span for '" + name + "'");
       return;
-    }
+    };
+    aside.css({
+      "left" : $('#content').outerWidth(),
+      "width": $('#content').outerWidth()/2
+    });
     aside.offset({
-      top: span.offset().top,
-      left: span.offset().left + $('#content').width()
+      top: span.offset().top
     });
   });
 }
