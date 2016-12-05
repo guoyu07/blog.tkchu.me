@@ -25,6 +25,9 @@ article blockquote{
   font-size: 0.95em;
   margin: 20px 0 20px;
 }
+article blockquote p{
+  text-indent: 0em;
+}
 article ul{
   padding-left: 2em;
 }

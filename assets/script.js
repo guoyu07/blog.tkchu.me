@@ -63,7 +63,7 @@ function refreshAsides() {
       return;
     };
     aside.css({
-      "left" : $('#content').outerWidth(),
+      "left" : $('#content').outerWidth() + 10,
       "width": $('#content').outerWidth()/2
     });
     aside.offset({
